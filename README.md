@@ -6,5 +6,5 @@ This reposistory contains the assignments for Selected Areas in Networks which i
   * Use numpy and matplotlib to display queueing delay within the network
 
 ## Author
-* Jesus Minjares
+* [**Jesus Minjares**](https://github.com/jminjares4)
   * Master of Science in Computer Engineering
