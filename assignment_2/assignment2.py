@@ -28,7 +28,6 @@ data_frame_graph = pd.DataFrame.hist(data, column='BYTES',grid=False,bins=400,ra
 
 plt.title('BYTES', fontweight='bold')
 
-
 # set xlabel
 plt.xlabel('Packets (BYTES)')
 # set ylabel
