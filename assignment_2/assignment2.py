@@ -49,3 +49,4 @@ if __name__=="__main__":
         plt.savefig('assignment_2_hist.png')
         # display graph
         plt.show()
+
