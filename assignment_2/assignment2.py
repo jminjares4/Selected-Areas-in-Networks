@@ -32,10 +32,13 @@ if __name__=="__main__":
         y_min, y_max = min(data['BYTES'].value_counts()), max(data['BYTES'].value_counts())
 
         # create a histogram using pandas.DataFrame.hist for 'BYTES' with 400 bins 
-        data_frame_graph = pd.DataFrame.hist(data, column='BYTES',grid=False,bins=400,range=[min_val,max_val],
+        data_frame_graph = pd.DataFrame.hist(data, column='BYTES',grid=False,bins=400,range=[0, max_val],# range=[min_val,max_val],
                                         label='Bytes', xlabelsize=10, ylabelsize=10, color='midnightblue')
         # Add title
         plt.title('Histogram of Bytes in NetFlow', fontweight='bold')
+
+        # set x lim, to set to 0->max_val
+        plt.xlim([0, max_val])
 
         # set xlabel
         plt.xlabel('Packets (BYTES)')
