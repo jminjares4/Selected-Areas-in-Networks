@@ -26,10 +26,10 @@ if __name__=="__main__":
         data = pd.read_csv(my_file)
 
         # get the min and max value for 'BYTES' column of the data frame
-        min_val, max_val = min(data['BYTES']) , max(data['BYTES'])
+        min_val, max_val = data['BYTES'].min(), data['BYTES'].max()
 
         # get the min and max value for the frequency of the packets
-        y_min, y_max = min(data['BYTES'].value_counts()), max(data['BYTES'].value_counts())
+        y_min, y_max = data['BYTES'].value_counts().max(), data['BYTES'].value_counts().max()
 
         # create a histogram using pandas.DataFrame.hist for 'BYTES' with 400 bins 
         data_frame_graph = pd.DataFrame.hist(data, column='BYTES',grid=False,bins=400,range=[0, max_val],# range=[min_val,max_val],
