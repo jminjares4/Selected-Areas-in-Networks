@@ -4,7 +4,8 @@ This reposistory contains the assignments for `Selected Areas in Networks` which
 # Table of Contents
 * [Assignment 1](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/assignment_1)
   * Use numpy and matplotlib to display queueing delay within the network
-
+* [Assignment 2](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/assignment_2)
+  * Use pmacct to read netflow packets and display data using pandas builtin functions
 ## Author
 * [**Jesus Minjares**](https://github.com/jminjares4)
   * Master of Science in Computer Engineering
