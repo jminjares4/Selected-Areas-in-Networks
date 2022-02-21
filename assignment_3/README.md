@@ -1,11 +1,17 @@
-# Assignment 2 :chart_with_upwards_trend:
+# Assignment 3 :chart_with_upwards_trend:
 
-Capture flow data with pmacct to a CSV file. Write a python script to load the CSV file 
-into a PANDAS dataframe, print the minimum and maximum number of flow bytes, and 
-plot the histogram of flow bytes; all with PANDAS functions (use v1.4 of PANDAS). I 
-want to see a lot of detail in the histogram so do not use the default number of bins, use 
-many more. Hint: use column=’BYTES’ as one of the arguments to the hist() function to 
-get it to work correctly.
+* ## Part A
+
+  Capture flow data with pmacct to a CSV file. Write a python script that loads the flow 
+  data into a PANDAS dataframe. Create a new dataframe that is a subset of the original 
+  data frame using PANDAS to isolate the TCP flows where the number of flow bytes 
+  exceeds 100. Submit this python script through Blackboard named lastname_3a.py. 
+
+* ## Part B
+
+  Add four colums to your original PANDAS dataframe from 4) called ‘src_as’, ‘src_org’, 
+  ‘dst_as’, ‘dst_org’ using the data in the ‘as.csv’ file. Submit your Python script through 
+  Blackboard named lastname_3b.py. 
 
 # Dependencies
 In order to read packet in the network, the assignment required to use `pmacctd` and `nfacctd`. Here is the link to install [**pmacct**](https://github.com/pmacct/pmacct).
@@ -28,9 +34,6 @@ In order to read packet in the network, the assignment required to use `pmacctd`
 | Software | Enviroment |
 | :---:    | :--:       |
 | ![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&color=764ABC) | ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white) |
-
-# Output
-<img src="images/assignment_2_hist.png">
 
 ## Author
 * [**Jesus Minjares**](https:/github.com/jminjares4)
