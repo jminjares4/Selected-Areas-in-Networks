@@ -20,7 +20,7 @@ queue is served by a transmission channel with a 2 Mbps rate?
 # Software Development
 | Software | Enviroment |
 | :---:    | :--:       |
-| ![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&color=764ABC) | ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white) |
+| ![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&color=3670A0&logoColor=ffdd54) | ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white) |
 
 # Output
 <img src="image/plot.png">
