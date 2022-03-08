@@ -13,8 +13,8 @@ import ipaddress as ip
 
 
 def filter_tcp(data):
+  """Filter TCP data that exceeed 100 byte in the dataframe"""
   tcp_data = data[ (data['PROTOCOL'] == 'tcp') & (data['BYTES'] > 100) ]
-
   return tcp_data
 
 if __name__=="__main__":
