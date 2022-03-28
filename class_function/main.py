@@ -18,3 +18,8 @@ y = np.array([3,5])
 
 print(lnorm(x,y,20))
 print(normalize(x))
+
+sns.histplot(x)
+plt.show()
+sns.histplot(normalize(x))
+plt.show()
