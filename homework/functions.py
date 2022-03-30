@@ -74,7 +74,8 @@ def lnorm(x,y, h =2):
     """
     euclidean-> h = 2
     manhattan-> h = 1
-    minkowski-> h = any number
+    minkowski-> h = 3
+    supreme distance -> h = high number 
     """
     val = 0.0
     if x.shape == y.shape:

@@ -29,11 +29,8 @@ print("Median: ", five_num['median'])
 print("Q3: ", five_num['q3'])
 print("Max: ", five_num['max'])
 
-
-
 # x = np.array([22,1,42,10])
 # y = np.array([20, 0, 36, 8])
-
 
 x = np.array([1,2])
 y = np.array([3,5])
@@ -48,4 +45,4 @@ print(supremum_distance(x,y))
 print(lnorm(x,y,2))
 print(lnorm(x,y,1))
 print(lnorm(x,y,3))
-print(supremum_distance(x,y))
+print(lnorm(x,y, 10))
