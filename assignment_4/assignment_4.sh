@@ -9,13 +9,13 @@
 sudo ovs-ofctl add-flow s1 arp,actions=normal
 sudo ovs-ofctl add-flow s1 dl_dst=00:00:00:00:00:01,actions=output:1
 sudo ovs-ofctl add-flow s1 dl_dst=00:00:00:00:00:02,actions=output:2
-sudo ovs-ofctl add-flow s1 dl_dst=00:00:00:00:01:01,actions=output:3
+sudo ovs-ofctl add-flow s1 dl_dst=00:00:00:01:01:00,actions=output:3
 
 # Switch 2
 sudo ovs-ofctl add-flow s2 arp,actions-normal
 sudo ovs-ofcti add-flow s2 dl_dst=00:00:00:00:00:03,actions=output:1
 sudo ovs-ofctl add-flow s2 dl_dst=00:00:00:00:00:04,actions=output:2
-sudo ovs-ofctl add-flow s2 dl_dst=00:00:00:00:02:02,actions=output:3
+sudo ovs-ofctl add-flow s2 dl_dst=00:00:00:02:02:00,actions=output:3
 
 # Switch 3
 sudo ovs-ofctl add-flow s3 arp, actions-normal

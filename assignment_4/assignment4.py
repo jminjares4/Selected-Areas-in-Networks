@@ -48,28 +48,7 @@ net.addLink('s2', 's3')
 # Start mininet network
 net.start()
 
-# s1
-s1.cmd('ovs-ofctl add-flow s1 arp,actions=normal')
-s1.cmd('ovs-ofctl add-flow s1 dl_dst=00:00:00:00:00:01,actions=output:1')
-s1.cmd('ovs-ofctl add-flow s1 dl_dst=00:00:00:00:00:02,actions=output:2')
-s1.cmd('ovs-ofctl add-flow s1 dl_dst=00:00:00:00:01:01,actions=output:3')
-
-# s2
-s2.cmd('ovs-ofctl add-flow s2 arp,actions-normal')
-s2.cmd('ovs-ofcti add-flow s2 dl_dst=00:00:00:00:00:03,actions=output:1')
-s2.cmd('ovs-ofctl add-flow s2 dl_dst=00:00:00:00:00:04,actions=output:2')
-s2.cmd('ovs-ofctl add-flow s2 dl_dst=00:00:00:00:02:02,actions=output:3')
-
-# s3
-s3.cmd('ovs-ofctl add-flow s3 arp, actions-normal')
-s3.cmd('ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.11,actions=mod_dl_dst=00:00:00:00:00:01,output:1')
-s3.cmd('ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.12,actions=mod_dl_dst=00:00:00:00:00:02,output:1')
-s3.cmd('ovs-ofctl add-flow s3 ip,nw_dst=192.168.2.13,actions=mod_dl_dst=00:00:00:00:00:03,output:2')
-s3.cmd('ovs-ofctl add-flow s3 ip,nw_dst=192.168.2.14,actions=mod_dl_dst=00:00:00:00:00:04,output:2')
-
-
 # Set gateway ip_address and mac_address
-
 # H1 configuration
 h1.cmd("ip route add default via 192.168.1.1")
 h1.cmd("arp -s 192.168.1.1 00:00:00:00:01:01")
