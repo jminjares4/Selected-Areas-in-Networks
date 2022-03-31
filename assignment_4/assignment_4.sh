@@ -20,6 +20,6 @@ sudo ovs-ofctl add-flow s2 dl_dst=00:00:00:00:02:02,actions=output:3
 # Switch 3
 sudo ovs-ofctl add-flow s3 arp, actions-normal
 sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.11,actions=mod_dl_dst=00:00:00:00:00:01,output:1
-sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.12,actions=mod_dl_dst=00:00:00:00:00:02,output:2
-sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.13,actions=mod_dl_dst=00:00:00:00:00:03,output:3
-sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.14,actions=mod_dl_dst=00:00:00:00:00:04,output:4
+sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.1.12,actions=mod_dl_dst=00:00:00:00:00:02,output:1
+sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.2.13,actions=mod_dl_dst=00:00:00:00:00:03,output:2
+sudo ovs-ofctl add-flow s3 ip,nw_dst=192.168.2.14,actions=mod_dl_dst=00:00:00:00:00:04,output:2
