@@ -55,6 +55,21 @@ for each host, respectively.
 Hardcode the other host's IP address and MAC address within the 
 same subnet as an ARP entry for each host, respectively.
 """
+h1.cmd("ip route add default via 192.168.1.1")
+h1.cmd("arp -s 192.168.1.1 00:00:00:00:01:01")
+h1.cmd("arp -s 192.168.1.12 00:00:00:00:00:02")
+
+h2.cmd("ip route add default via 192.168.1.1")
+h2.cmd("arp -s 192.168.1.1 00:00:00:00:01:01")
+h2.cmd("arp -s 192.168.1.11 00:00:00:00:00:01")
+
+h3.cmd("ip route add default via 192.168.2.1")
+h3.cmd("arp -s 192.168.2.1 00:00:00:00:02:02")
+h3.cmd("arp -s 192.168.2.14 00:00:00:00:00:04")
+
+h4.cmd("ip route add default via 192.168.2.1")
+h4.cmd("arp -s 192.168.2.1 00:00:00:00:02:02")
+h4.cmd("arp -s 192.168.2.13 00:00:00:00:00:03")
 
 # Initialize CLI
 CLI( net )
