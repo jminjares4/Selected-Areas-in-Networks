@@ -48,25 +48,24 @@ net.addLink('s2', 's3')
 # Start mininet network
 net.start()
 
-"""
-Add the gateway IP address route to each host, respectively.
-Hardcode the gateway IP address and MAC address as an ARP entry 
-for each host, respectively.
-Hardcode the other host's IP address and MAC address within the 
-same subnet as an ARP entry for each host, respectively.
-"""
+# Set gateway ip_address and mac_address
+
+# H1 configuration
 h1.cmd("ip route add default via 192.168.1.1")
 h1.cmd("arp -s 192.168.1.1 00:00:00:00:01:01")
 h1.cmd("arp -s 192.168.1.12 00:00:00:00:00:02")
 
+# H2 configuration
 h2.cmd("ip route add default via 192.168.1.1")
 h2.cmd("arp -s 192.168.1.1 00:00:00:00:01:01")
 h2.cmd("arp -s 192.168.1.11 00:00:00:00:00:01")
 
+# H3 configuration
 h3.cmd("ip route add default via 192.168.2.1")
 h3.cmd("arp -s 192.168.2.1 00:00:00:00:02:02")
 h3.cmd("arp -s 192.168.2.14 00:00:00:00:00:04")
 
+# H4 configuration
 h4.cmd("ip route add default via 192.168.2.1")
 h4.cmd("arp -s 192.168.2.1 00:00:00:00:02:02")
 h4.cmd("arp -s 192.168.2.13 00:00:00:00:00:03")
