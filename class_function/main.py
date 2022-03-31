@@ -23,3 +23,6 @@ sns.histplot(x)
 plt.show()
 sns.histplot(normalize(x))
 plt.show()
+
+
+
