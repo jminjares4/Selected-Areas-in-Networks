@@ -1,4 +1,4 @@
-# **RYU First Application**
+# **RYU First Application** :dragon:
 Ryu applications are just python scripts. Therefore, they are easy to developed and test with the ability of reconfiguration.
 
 ## **How to run RYU-Applications**
