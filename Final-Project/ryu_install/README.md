@@ -1,7 +1,7 @@
 # **RYU Installation Setup** :dragon:
 
 The installation for RYU Network Operating System (NOS) is straightforward.
-I will listing the most popular ones.
+I will be listing the most popular ones.
 
 # **Prerequisites**
 ```bash
