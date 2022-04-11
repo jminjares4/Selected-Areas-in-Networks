@@ -8,7 +8,7 @@ Develop a deep knowledge of the RYU network operating system.
 ## **Table of Contents**
 * Overview of RYU
 * Installation of RYU
-  * [Quick Installation Guide.](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/Final-Project/ryu_install)
+  * [Quick Installation Guide](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/Final-Project/ryu_install)
 * First Application
   * [Getting started](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/Final-Project/First_App)
 * Custom Configuration with RYU
@@ -18,8 +18,8 @@ Develop a deep knowledge of the RYU network operating system.
   - [ ] More depth of RYU
 - [x] Install guide for RYU
   - [x] Create markdown file
-- [ ] First application development and testing
-  - [ ] Create Markdown file
+- [x] First application development and testing
+  - [x] Create Markdown file
 - [ ] Custom configurations
 - [ ] New Features?
 ## **Author:**
