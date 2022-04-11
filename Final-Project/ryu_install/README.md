@@ -27,10 +27,10 @@ git clone https://github.com/faucetsdn/ryu.git
 cd ryu; pip install .   
 ```
 The final step is the install the optional dependencies for application that require:
-    * OF-Config 
-    * NETCONF
-    * BGP speaker (SSH console) 
-    * Zebra protocol service (database)     
+ * OF-Config 
+ * NETCONF
+ * BGP speaker (SSH console) 
+ * Zebra protocol service (database)     
 ```bash
 # RYU must be install from source
 pip install -r tools/optional-requires
