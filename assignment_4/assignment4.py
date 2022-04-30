@@ -60,7 +60,7 @@ h1.cmd("arp -s 192.168.1.12 00:00:00:00:00:02")
 
 # H2 configuration
 h2.cmd("ip route add default via 192.168.1.1")
-h2.cmd("arp -s 192.168.1.1 00:00:00:00:01:01")
+h2.cmd("arp -s 192.168.1.1 00:00:00:01:01:00")
 h2.cmd("arp -s 192.168.1.11 00:00:00:00:00:01")
 
 # H3 configuration
