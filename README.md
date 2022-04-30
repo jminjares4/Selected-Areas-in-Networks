@@ -8,6 +8,8 @@ This reposistory contains the assignments for `Selected Areas in Networks` which
   * Use pmacct to read netflow packets and display data using pandas builtin functions
 * [Assignment 3](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/assignment_3)
   * Use PANDAS to isolate TCP flows and manipulate dataframe
+* [Assignment 4](https://github.com/jminjares4/Selected-Areas-in-Networks/tree/main/assignment_4)
+  * Use mininet to create 2 subnets joined by a switch
 
 ## Author:
 * [**Jesus Minjares**](https://github.com/jminjares4)<br>
