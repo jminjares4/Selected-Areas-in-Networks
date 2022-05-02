@@ -36,7 +36,6 @@ The final step is the install the optional dependencies for application that req
 pip install -r tools/optional-requires
 ```
 
-
 ## **Author:**
 * [**Jesus Minjares**](https://github.com/jminjares4)<br>
   * Master of Science in Computer Engineering<br>
